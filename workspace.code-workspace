@@ -1,12 +1,13 @@
 {
-	"folders": [
-		{
-			"path": "..\\..\\..\\CS241"
-		},
-		{
-			"name": "luc12001.github.io",
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "mainsite"
+        },
+        {
+            "path": "..\\..\\ranch\\ranch-start"
+        },
+        {
+            "path": "ranch"
+        }
+    ]
 }
