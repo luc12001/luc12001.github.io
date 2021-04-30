@@ -1,5 +1,26 @@
-@media only screen and (min-width: 32.5em){
+@media only screen and (min-width: 700px) {
     #profilePic {
         float: right;
+    }
+
+    #layout {
+        grid-template-columns: auto 50rem auto;
+    }
+
+    #fitt {
+        align-items: center;
+        grid-column: 2;
+        grid-row:1; 
+        margin-left: 3rem;
+        margin-top: -12.5rem;
+        padding-right: 3%;
+    }
+
+    body p{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        font-size: 24px;
     }
 }

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1200px){
+    #profilePic {
+        float: right;
+    }
+
+    #layout {
+        grid-template-columns: auto 100rem auto;
+    }
+
+    #hick {
+        align-items: center;
+        grid-column: 1;
+        grid-row:1;
+    }
+    
+    #fitt {
+        align-items: center;
+        grid-column: 2;
+        grid-row:1; 
+        margin-top: -7.5rem;
+    
+    }
+    
+    #w_space {
+        align-items: center;
+        grid-column: 3;
+        grid-row: 1;
+        margin-top: -12.75rem;
+        margin-left: 6%;
+    } 
+
+    body p{
+        width: 85%;
+        font-size: 24px;
+    }
+}
