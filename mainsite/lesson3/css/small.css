@@ -17,9 +17,17 @@ header {
     padding: .5rem 2%;
     background-color: #88a0aa;
 }
-header img {float: left; margin-right: 10px; width: 50px}
+header img {
+    float: left; 
+    margin-right: 10px; 
+    width: 50px;
+}
 header h1 {margin: 0; font-size: 1.3rem;}
 header h2 {margin: 0; font-weight: normal;font-size: 1rem;}
+
+#logo {
+    width: 75px;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
