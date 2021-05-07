@@ -8,14 +8,18 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;;
+    color: #93e1d8;
 }
 
+p, h3 {
+    color: black;
+}
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #88a0aa;
+    background-color: #2e2c2f;
 }
 header img {
     float: left; 
@@ -31,7 +35,7 @@ header h2 {margin: 0; font-weight: normal;font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #7c9eb2;
+    background-color: #93e1d8;
 }
 nav ul {
     list-style-type: none;
@@ -41,7 +45,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: #475b63;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -50,12 +54,12 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    background-color: #78c0e0;
-    color: #364156;
+    background-color: #6e0d25;
+    color: #ff4a1c;
 }
 nav ul li.active a {
-    background-color: #364156;
-    color: #fff;
+    background-color: #2e2c2f;
+    color: #93e1d8;
 }
 /*----------- MAIN --------------*/
 main {
@@ -69,9 +73,10 @@ main img {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #78C0E0;
+    background-color: #2e2c2f;
     padding: .5rem 2%;
     text-align: center;
+    color: #ddfff7;
 }
 
 
