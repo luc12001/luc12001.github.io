@@ -6,6 +6,17 @@
         margin:auto;
     }
 
+    .headerwrapper{
+        background-color: #2e2c2f;
+    }
+
+    .navwrapper {
+        background-color: #93e1d8;
+    }
+
+    .footerwrapper {
+        background-color: #2e2c2f;
+    }
 
 /*----------- BODY --------------*/
 
@@ -16,7 +27,8 @@
 
 
 /*----------- NAVIGATION --------------*/
-
+    nav ul li {flex-basis: auto;}
+    nav ul li a {padding: .5rem 1rem;}
 
 
 /*----------- MAIN --------------*/
