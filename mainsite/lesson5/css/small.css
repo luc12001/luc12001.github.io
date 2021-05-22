@@ -1,0 +1,179 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+
+
+div#pancakes {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 1000;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;;
+    color: #93e1d8;
+}
+
+p, h3 {
+    color: black;
+}
+
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #2e2c2f;
+}
+header img {
+    float: left; 
+    margin-right: 10px; 
+    width: 50px;
+}
+header h1 {margin: 0; font-size: 1.3rem;}
+header h2 {margin: 0; font-weight: normal;font-size: 1rem;}
+
+#logo {
+    width: 75px;
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #93e1d8;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #475b63;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: #6e0d25;
+    color: #ff4a1c;
+}
+
+.navigation .active a {
+    background-color: #2e2c2f;
+    color: #93e1d8;
+}
+
+.responsive li{
+    display: block;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+#tname {
+    color: #2e2c2f;
+    align-content: center;
+}
+
+
+
+section.forecast{
+    display: none;
+}
+
+.wsummaryparent {
+    position: relative;
+    
+}
+
+.wsummarychild {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0, 0.75);
+    padding-right: 4%;
+}
+
+.wsummarychild p {
+    color: #93e1d8;
+    text-align: center;
+    
+}
+
+.wsummarychild ul{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.heroimg {
+    width: 100%;
+    height: auto;
+}
+
+.bodybox {
+    background-color: rgba(147, 255, 216, .5);
+    padding: 10px;
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: pre-line;
+    border: 1px solid rgba(0,0,0, 0.75);
+}
+
+.bimg1 {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #2e2c2f;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #ddfff7;
+    
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
