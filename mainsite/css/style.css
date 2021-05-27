@@ -24,12 +24,14 @@ body {
     
 }
 footer {
+    
     grid-column: 2;
     grid-row: 4;
     font-family: 'Lato', sans-serif;
 }
 
 #footerBox {
+    
     grid-column: 2;
     grid-row: 4;
     padding: 3%;
