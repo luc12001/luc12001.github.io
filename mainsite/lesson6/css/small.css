@@ -3,8 +3,6 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 /*----------- BODY --------------*/
-
-
 div#pancakes {
     background-color: yellow;
     color: black;
@@ -166,6 +164,7 @@ footer {
     color: #ddfff7;
     
 }
+
 
 
 
