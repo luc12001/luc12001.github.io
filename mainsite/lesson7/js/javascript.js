@@ -1,4 +1,4 @@
-const imagesToLoad = document.querySelectorAll("img[data-src]");
+const images = document.querySelectorAll("img[data-src]");
 
 function preloadImage(img) {
     const src = img.getAttribute("data-src");
@@ -10,8 +10,8 @@ function preloadImage(img) {
 }
 
 const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 200px 0px"
+    threshold: 1,
+    rootMargin: "0px 0px 50px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries,
