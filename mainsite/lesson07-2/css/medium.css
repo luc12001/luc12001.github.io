@@ -1,0 +1,68 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 800px) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+    header img {width: auto;}
+    header h1 {font-size: 2rem;}
+    header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child{
+        display: none;
+    }
+
+   
+
+/*----------- MAIN --------------*/
+section.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+section.forecast div{
+    text-align: center;
+    border: 1px solid #2e2c2f;
+    color: #2e2c2f;
+}
+
+section.forecast div h5 {
+    background-color: #93e1d8;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.bimg1 {
+    width: 400px;
+    height: auto;
+    float: right;
+    padding: 10px;
+}
+
+.weather-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
