@@ -1,0 +1,45 @@
+tbody {
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    
+}
+
+#highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
+.odd {
+    background-color: #e7f0ed;
+}
+
+.even {
+    background-color: #e7ffed;
+}
+
+caption {
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    font-weight: 900;
+    padding: 1%;
+}
+
+.top-bot {
+    background-color: #7fb9c2;
+}
+
+.names {
+    background-color: #628ca6;
+    color: white;
+    
+}
+
+#foot {
+    font-size: small;
+    padding: 2%;
+}
+
+.odd td:first-child { 
+    font-style: italic;
+}
