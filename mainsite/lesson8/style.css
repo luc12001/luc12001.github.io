@@ -40,6 +40,6 @@ caption {
     padding: 2%;
 }
 
-.odd td:first-child { 
+#black-friday td:first-child { 
     font-style: italic;
 }
