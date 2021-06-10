@@ -1,12 +1,19 @@
+@media only screen and (min-width: 64rem) {
+    body {
+        max-width: 64rem;
+        margin: auto;
+    }
+}
+
 table {
     box-shadow: 8px 8px 10px darkgray;
     background-color: darkgrey;
     margin: auto;
-    min-width: 60%;
+    width: 100%;
 }
 
 tbody {
-    font-family: Ubuntu, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     font-size: 20px;
     
@@ -41,6 +48,7 @@ caption {
 .top-bot {
     background-color: #7fb9c2;
     border: 2px solid darkgrey;
+    border-collapse: collapse;
 }
 
 .names {
