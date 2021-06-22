@@ -22,6 +22,7 @@ header {
     font-family: 'Lato', sans-serif;
     
 }
+
 footer {    
     grid-column: 2;
     grid-row: 4;
