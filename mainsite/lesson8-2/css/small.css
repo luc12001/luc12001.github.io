@@ -114,7 +114,13 @@ main {
     align-content: center;
 }
 
+#Yes {
+    color: black
+}
 
+#No {
+    color: black
+}
 
 section.forecast{
     display: none;
