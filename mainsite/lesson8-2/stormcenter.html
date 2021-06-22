@@ -38,20 +38,20 @@
     <main>
         <div class="info-grid">
             <div class="col1">
-        <p>Full Name: </p><label for="name"><input minlenght="5" type="text" pattern="[A-Za-z]" name="Full Name"></label>
-        <p>Email: </p><label for="email"><input type="email" id="inputemail" name="email"></label>
-        <p>Phone Number: <label for="phone"></p><input type="tel" name="telephone" required></label>
-        <p>Zip Code: </p><label for="Zip"><input type="number" name="Zip Code" required></label>
-        <p>Storm Date: </p><label for="Date"><input type="date" name="Storm Date"></label>
-        <p>Storm Type: </p><label for="type"><input list="storm-type" name="storm types"></label>
-        <label for="storm-type"><datalist id="storm-type">
+        <p>Full Name: </p><label for="name"><input id="name" minlength="5" type="text" pattern="[A-Za-z]" name="Full Name"></label>
+        <p>Email: </p><label for="email"><input id="email" type="email" name="email"></label>
+        <p>Phone Number: </p><label for="phone"><input id="phone" type="tel" name="telephone" required></label>
+        <p>Zip Code: </p><label for="Zip"><input id="Zip" type="number" name="Zip Code" required></label>
+        <p>Storm Date: </p><label for="Date"><input id="Date" type="date" name="Storm Date"></label>
+        <p>Storm Type: </p><label for="type"><input id="type" list="storm-type" name="storm types"></label>
+        <label><datalist id="storm-type">
             <option value="Flash Flood"></option>
             <option value="Hail"></option>
             <option value="Hurricane"></option>
             <option value="Thunderstorm"></option>
             <option value="Tornado"></option>
         </datalist></label>
-        <p>Storm Severity: </p><label for="Severity"><p><input type="range" min="1" max="10" name="storm-severity"> </label></p>
+        <p>Storm Severity: </p><p><label for="Severity"><input id="Severity" type="range" min="1" max="10" name="storm-severity"> </label></p>
         </div>
         <div class="col2">
         <p>Select Region: </p>
@@ -65,12 +65,12 @@
         
         
         <p>Are you in Danger?</p>
-        <label for="dangerY"><input type="radio" id="danger" name="danger-yes" value="Yes"> </label>
-        <label for="Yes"><span class="textb">Yes</span></label><br>
-        <label for ="dangerN"><input type="radio" id="danger" name="danger-no" value="No"> </label>
-        <label for="No"><span class="textb">No</span></label><br>
-        <label><p>Additional Information or Comments</p><textarea rows="9" cols="50" name="comments"></textarea></label>
-        <form action="thanks.html"><label for="submit"><input type="submit" value="Submit" name="Submit Button"></label></form>
+        <label for="dangerY"><input id="dangerY" type="radio" name="danger-yes" value="Yes"> </label>
+        <label><span id="Yes">Yes</span></label><br>
+        <label for ="dangerN"><input id="dangerN" type="radio" name="danger-no" value="No"> </label>
+        <label><span id="No">No</span></label><br>
+        <p><label>Additional Information or Comments<textarea rows="9" cols="50" name="comments"></textarea></label></p>
+        <form action="thanks.html"><label for="submit"><input id="submit" type="submit" value="Submit" name="Submit Button"></label></form>
         </div>
         </div>
     </main>
