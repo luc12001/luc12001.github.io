@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-
 #layout {
     display: grid;
     grid-template-columns: auto 600px auto;
