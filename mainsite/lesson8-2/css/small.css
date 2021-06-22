@@ -114,6 +114,10 @@ main {
     align-content: center;
 }
 
+span {
+    color: black;
+}
+
 #Yes {
     color: black
 }
