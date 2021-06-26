@@ -32,7 +32,7 @@ window.onload = function() {
 
     //5 Day Forecast 
 
-    const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
+    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
 
     const d = new Date();
     
