@@ -178,9 +178,10 @@ nav {
 }
 
 #cards div section h3 {
-    font-size: 19px;
+    font-size: 21px;
     text-align: center;
-    margin: 0;
+    margin: 0px;
+    padding-top: 4px;
 }
 
 
@@ -261,7 +262,7 @@ section#weatherforecast span{
     padding: 10px;
 }
 
-section {
+#weatherforecast {
 	max-width: 600px;
     margin: .5rem auto;
 	border:1px solid #bbb;
@@ -270,8 +271,8 @@ section {
 	flex-wrap: wrap;
 }
 
-article {
-    display: flex;
+#cards {
+    
     flex-direction: row;
     padding: 2%;
 }
@@ -301,6 +302,20 @@ article:nth-child(odd) {
     color: black;
 }
 
+.event-container {
+    background-color: #93e1d8;
+    
+    border:rgba(0,0,0, 0.75) solid 2px;
+    margin: auto;
+    width: 50%;
+    
+}
+
+.event-container div {
+    margin: 2%;
+    text-align: center;
+    
+}
 
 /*----------- FOOTER --------------*/
 footer {
