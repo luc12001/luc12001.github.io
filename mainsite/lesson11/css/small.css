@@ -138,6 +138,54 @@ nav {
     
     text-align: center;
 }
+
+/* Cards */
+
+#cards {
+    background-color: white;
+    padding: 10px;
+    margin: 30px 0px 30px 0px;
+    color: black;
+    
+}
+
+#cards div {
+    border: solid 1px #296c6e;
+    padding: 1rem;
+    margin: 10px;
+}
+
+#cards div figure {
+    margin: 0;
+    width: 100%;
+}
+
+#cards div figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px #333;
+}
+
+#cards div section {
+    text-align: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+#cards div section h2 {
+    margin: 0;
+    text-align: center;
+}
+
+#cards div section h3 {
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
@@ -248,6 +296,11 @@ article:nth-child(odd) {
     color:rgba(0,0,0, 0.75);
     padding-left: 2%;
 }
+
+#fish {
+    color: black;
+}
+
 
 /*----------- FOOTER --------------*/
 footer {

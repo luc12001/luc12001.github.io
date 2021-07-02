@@ -40,7 +40,17 @@
 
 
 /*----------- MAIN --------------*/
-
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #cards div {
+    display: block;
+  }
+  #cards div section h3 {
+    font-size: 12px;
+    margin-top: 0%;
+  }
 
 
 /*----------- FOOTER --------------*/

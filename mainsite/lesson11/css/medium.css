@@ -81,6 +81,20 @@ section#weatherforecast {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+#cards div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#cards div:nth-child(2) section {
+  grid-column: 2;
+}
+
+#cards div:nth-child(2) figure {
+    grid-column: 1;
+    grid-row: 1;
+}
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

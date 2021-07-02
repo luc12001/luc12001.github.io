@@ -1,30 +1,50 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+  
 fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        const towns = jsonObject['towns'];
-        console.table(jsonObject);// temporary checking for valid response and data parsing
-        for (let i = 0; i < towns.length; i++) {
-            let cards = document.createElement('section');
-            let h2 = document.createElement('h2');
-            let motto = document.createElement('p');
-            let yearFounded = document.createElement('p');
-            let image = document.createElement('img');
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject["towns"];
+    console.table(jsonObject);
 
-            h2.textContent = towns[i].name + ' ' + towns[i].lastname;
-            motto.textContent = "motto: " + towns[i].motto;
-            yearFounded.textContent = "yearFounded: " + towns[i].yearFounded;
-            image.setAttribute('src', towns[i].imageurl);
-            image.setAttribute('alt', towns[i].name + ' ' + towns[i].lastname + " - " + i);
+    for (let i = 0; i < towns.length; i++) {
+      if (i == 0 || i == 2 || i == 6) {
+        let card = document.createElement("div");
+        let info = document.createElement("section");
+        let image = document.createElement("figure");
 
-            cards.appendChild(h2);
-            cards.appendChild(motto);
-            cards.appendChild(yearFounded);
-            cards.appendChild(image);
+        let name = document.createElement("h2");
+        let motto = document.createElement("h3");
+        let yearFounded = document.createElement("p");
+        let currentPopulation = document.createElement("p");
+        let averageRainfall = document.createElement("p");
+        let photo = document.createElement("img");
 
-            document.querySelector('div.cards').appendChild(cards);
-        }
-    });
+        name.textContent = towns[i].name;
+        motto.textContent = towns[i].motto;
+        yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+        currentPopulation.textContent =
+          "Population: " + towns[i].currentPopulation;
+        averageRainfall.textContent =
+          "Annual Rain Fall: " + towns[i].averageRainfall;
+
+        photo.setAttribute("src", "images/" + towns[i].photo);
+        photo.setAttribute("alt", towns[i].name);
+        photo.setAttribute("width", "400");
+        photo.setAttribute("height", "200");
+
+        info.appendChild(name);
+        info.appendChild(motto);
+        info.appendChild(yearFounded);
+        info.appendChild(currentPopulation);
+        info.appendChild(averageRainfall);
+
+        card.appendChild(info);
+        image.appendChild(photo);
+        card.appendChild(image);
+
+        document.getElementById("cards").appendChild(card);
+      }
+    }
+  });

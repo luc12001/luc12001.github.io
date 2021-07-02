@@ -32,7 +32,7 @@ window.onload = function() {
 
     //5 Day Forecast 
 
-    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
+    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585000&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
 
     const d = new Date();
     
@@ -51,7 +51,7 @@ window.onload = function() {
     fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-        document.getElementById("townName").textContent = weatherInfo.name;
+  
         console.log(weatherInfo)
     let forecastDayNumber = todayDayNumber;
     let mylist = weatherInfo.list;
@@ -81,7 +81,7 @@ window.onload = function() {
             
         document.getElementById('weatherforecast').appendChild(theDay);
     
-        document.getElementById('townName').innerHTML = weatherInfo.city.name;
+        
         document.getElementById('cond').innerHTML = weatherInfo.list[0].weather[0].main;
         document.getElementById('temp').innerHTML = weatherInfo.list[0].main.temp;
         document.getElementById('speed').innerHTML = weatherInfo.list[0].wind.speed;
@@ -90,3 +90,36 @@ window.onload = function() {
         
           } //end if
         }});
+
+
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+    fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        //console.table(jsonObject);
+
+        const towns = jsonObject['towns'];
+
+        const needTowns = towns.filter(town => town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven');
+
+        const eventFish = document.querySelector('#eventFish');
+
+        const fish = "Fish Haven";
+        
+        needTowns.forEach(town => {
+
+          if (town.name == fish) {
+            for (let i = 0; i < town.events.length; i++) {
+              let ef = document.createElement('p');
+
+              ef.textContent = town.events[i];
+              eventFish.appendChild(ef);
+            }
+          }
+
+          
+        });
+    });
