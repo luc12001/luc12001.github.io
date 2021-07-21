@@ -55,7 +55,6 @@ window.onload = function() {
         console.log(weatherInfo)
     let forecastDayNumber = todayDayNumber;
     let mylist = weatherInfo.list;
-        console.log(mylist)
     for(i=0; i<mylist.length; i++){
         let time = mylist[i].dt_txt;
         if (time.includes('18:00:00')){

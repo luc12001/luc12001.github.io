@@ -17,13 +17,16 @@ window.onload = function() {
     const today = new Date();
     const dayNumber = today.getDay();
 
-    const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=29.0339&lon=-95.4344&exclude=minutely,hourly&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
+    const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=29.0339&lon=-95.4344&exclude=hourly,daily,minutely&appid=6f72edb5e59fb4d3d7678f84fc61706e&units=imperial";
     fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
    console.log(weatherInfo)
 
-    document.getElementById('cond').innerHTML = weatherInfo.current.weather[0].main;
+   document.getElementById('cond').innerHTML = weatherInfo.current.weather[0].main;
+   document.getElementById('walert').innerHTML = weatherInfo.alerts.event;
+   document.getElementById('walert2').innerHTML = weatherInfo.alerts.event;
+    
     document.getElementById('temp').innerHTML = weatherInfo.current.temp;
     document.getElementById('speed').innerHTML = weatherInfo.current.wind_speed;
     document.getElementById('humid').innerHTML = weatherInfo.current.humidity;
