@@ -51,6 +51,14 @@ header h2 {
     padding: 2%;
 }
 
+.closebtn {
+    font-size: larger;
+}
+
+.alert {
+    text-align: center;
+}
+
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: #133391;
@@ -293,7 +301,7 @@ section#weatherforecast span{
 }
 
 #weatherforecast span{
-    color:#91abfa;
+    color: white;
 }
 
 .indexGrid{
