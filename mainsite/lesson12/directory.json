@@ -1,0 +1,45 @@
+{ "business": [
+    {
+    "businessName": "Wayside Pub",
+    "address": "106 This Way, Lake Jackson, TX 77566",
+    "logo": "waysidelogo.jpg",
+    "phoneNumbers": "9794800378"
+    },
+    {
+    "businessName": "Leeroys Esports",
+    "address": "221 Parking Way suite b, Lake Jackson, TX 77566",
+    "logo": "leeroysLogo.png",
+    "phoneNumbers": "3463353443"
+    },
+    {
+    "businessName": "Tirefly",
+    "address": "301 Plantation Dr. Lake Jackson, TX 77566",
+    "logo": "tireflyLogo.png",
+    "phoneNumbers": "9792970787"
+    },
+    {
+    "businessName": "The Fill Station",
+    "address": "127 Parking Way St, Lake Jackson, TX 77566",
+    "logo": "fillstation.png",
+    "phoneNumbers": "9792928280"
+    },
+    {
+    "businessName": "Swap Shack Lake Jackson",
+    "address": "111 Abner Jackson Pkwy, Lake Jackson, TX 77566",
+    "logo": "swampshack.jpg",
+    "phoneNumbers": "9792997444"
+    },
+    {
+    "businessName": "Asiel's Restaurant",
+    "address": "330 N Dixie Dr G, Lake Jackson, TX 77566",
+    "logo": "asiels.png",
+    "phoneNumbers": "9792997444"
+    }, 
+    {
+    "businessName": "Urban Air Trampoline and Adventure Park",
+    "address": "100 TX-332 West #1432, Lake Jackson, TX 77566",
+    "logo": "urbanair.png",
+    "phoneNumbers": "9793077793"
+    }    
+       
+]}

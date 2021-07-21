@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Chamber of Commerce for Lake Jackson and some surrounding areas.">
+<meta name="author" content="Brandon Luce">
+<title>Lake Jackson Chamber of Commerce</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+</style>
+
+<body>
+<div class="headerwrapper">
+    <header class="clearfix">
+	<img id="logo" src="images/logo.png" alt="logo">
+ <h1>Lake Jackson Chamber of Commerce</h1>
+ <h2>The City of Enchantment</h2>
+    </header>
+</div>
+<div class="navwrapper">
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li class="active"><a href="join.html">Join/Renew</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </ul>
+    
+    </nav>
+</div>
+    <main>
+        <div class="companies">
+        <h3>Join Today!</h3>
+        <p>Below you can sign up and join us and recieve various benefits. Some benefits include, exclusive offers and promotions from local businesses. You will recieve earlybird discounts and notices for our upcoming events.</p>
+        <div class="info-grid">
+        <div class="col1">
+        <p>First Name: </p><label for="fname"><input id="fname" minlength="5" type="text" pattern="[A-Za-z]" name="fname" required></label>
+        <p>Last Name: </p><label for="lname"><input id="lname" minlength="5" type="text" pattern="[A-Za-z]" name="lname" required></label>
+        <p>Title: </p><label for="title"><input id="title" minlength="5" type="text" pattern="[A-Za-z]" name="title"></label>
+        <p>Email: </p><label for="email"><input id="email" type="email" name="email" required></label>
+        <p>Phone Number: </p><label for="phone"><input id="phone" type="tel" name="telephone"></label>
+        <p>Business Name: </p><label for="bname"><input id="bname" minlength="5" type="text" pattern="[A-Za-z]" name="bname" required></label>
+        <p>Business Address: </p><label for="baddress"><input id="baddress" minlength="5" type="text" pattern="[A-Za-z]" name="baddress"></label>
+        </div><div class="col2">
+        <p>Business Website: </p><label for="bwebsite"><input id="bwebsite" type="text" pattern="[A-Za-z]" name="bwebsite"></label>
+        <p>Business Description: </p><label for="bdescription"><textarea id="bdescription" minlength="5" name="bdescription"></textarea></label>    
+        <p>Membership: </p><label for="membership"><input id="membership" list="membershipType" name="membershipType"></label>
+        <label><datalist id="membershipType">
+            <option value="Non-profit ($100)"></option>
+            <option value="Bronze ($200)"></option>
+            <option value="Silver ($400)"></option>
+            <option value="Gold ($1000)"></option>
+        </datalist></label>
+        <p>By joining Non-profit level we will thank you.</p>
+        <p>By joining Bronze level you can recieve a directory listing for your businss.</p>
+        <p>By joining Silver level you can recieve specialized business trainings and all previous levels.</p>
+        <p>By joining Gold level you will recieve specialized advertising and social media posts and all previous levels.</p>
+        </div>
+        
+    </div>
+</div>
+<br>
+
+    </main>
+
+    <div class="footerwrapper">
+    <footer class="clearfix">
+        <p>300 Abner Jackson Parkway, Lake Jackson, TX 77566</p>
+        <p>Phone: 979-285-2501  Fax: 979-285-2505</p>
+        <p>Email: chamber@ljchamber.org </p>
+    </footer>
+</div>
+
+<script src="javascript/javascript-home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+</html>

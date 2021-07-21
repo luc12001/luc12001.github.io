@@ -1,0 +1,66 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 75rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+    .headerwrapper{
+        background-color: #133391;
+    }
+
+    .navwrapper {
+        background-color: #133391;
+    }
+
+    .footerwrapper {
+        background-color: #133391;
+    }
+
+    .weather-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#weatherforecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul li {flex-basis: auto;}
+    nav ul li a {padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  #cards div {
+    display: block;
+  }
+
+  #cards div section h3 {
+    font-size: 12px;
+    margin-top: 0%;
+  }
+
+#image-wheel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
