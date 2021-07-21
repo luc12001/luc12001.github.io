@@ -4,12 +4,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     color: #93e1d8;
 }
 
-p, h3, h4, li, h6 {
+p, h3, h4, li, h6{
     color: black;
+}
+
+footer span {
+    color: white;
 }
 
 /*----------- HEADER --------------*/

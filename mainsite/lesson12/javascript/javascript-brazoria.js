@@ -1,4 +1,12 @@
-    const hambutton = document.querySelector('.ham');
+window.onload = function() {
+  var myDate = new Date();
+  var myYear = myDate.getFullYear();
+  document.getElementById("theYear").textContent = myYear;
+  document.getElementById("lastUpdated").textContent = "Last Updated: " + document.lastModified;
+
+  }
+
+const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('.navigation');
     
     hambutton.addEventListener("click", () =>{mainnav.classList.toggle("responsive")}, false);
